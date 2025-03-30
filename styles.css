@@ -1,0 +1,310 @@
+/* Estilos del selector de idioma */
+.language-selector {
+    position: fixed; /* Fija el selector en la esquina superior derecha */
+    top: 10px;
+    right: 10px;
+    z-index: 100; /* Asegura que esté encima de otros elementos */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  }
+  
+  .language-selector button {
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar por encima */
+    margin: 0 3px; /* Espacio entre las banderas */
+    padding: 0; /* Elimina el relleno interno del botón */
+  }
+  
+  .language-selector button img {
+    width: 30px; /* Tamaño de las banderas (ajustar según necesidad) */
+    height: auto; /* Mantiene la proporción de aspecto */
+    border-radius: 3px; /* Bordes redondeados */
+    transition: transform 0.2s ease-in-out; /* Transición suave al pasar el ratón */
+  }
+  
+  .language-selector button:hover img {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el ratón */
+  }
+  
+  /* General Styles */
+  body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+  }
+  
+  .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+  }
+  
+  h1, h2, h3 {
+      font-weight: bold;
+      margin-bottom: 10px;
+  }
+  
+  img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 20px;
+  }
+  
+  /* Header Styles */
+  header {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hero-image {
+      position: relative;
+      text-align: center;
+      color: white;
+  }
+  
+  .hero-image img {
+      width: 100%;
+      height: auto;
+      object-fit: cover; /* Ensure image fills the container */
+  }
+  
+  .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 1.5em;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  /* Wedding Section Styles */
+  #wedding {
+      padding: 40px 0;
+      text-align: center;
+  }
+  
+  #wedding .container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+  }
+  
+  #wedding .event,
+  #wedding .reception {
+      width: 45%;
+      margin-bottom: 30px;
+  }
+  
+  .rsvp-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #8B4513; /* Brown color */
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+  }
+  
+  /* Our Story Section Styles */
+  #our-story {
+      padding: 40px 0;
+      text-align: center;
+  }
+  
+  /* Estilos de la galería de fotos */
+  .gallery-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden; /* Oculta las imágenes que se salen del contenedor */
+      margin-bottom: 20px;
+  }
+  
+  .gallery {
+      display: flex;
+      transition: transform 0.5s ease-in-out; /* Transición suave para el desplazamiento */
+  }
+  
+  .gallery img {
+      width: 200px; /* Ancho de cada foto */
+      height: auto;
+      margin-right: 10px; /* Espacio entre las fotos */
+      object-fit: cover; /* Ajusta las imágenes al tamaño del contenedor */
+  }
+  
+  .gallery-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 1.2em;
+      z-index: 10;
+  }
+  
+  .gallery-arrow.prev {
+      left: 10px;
+  }
+  
+  .gallery-arrow.next {
+      right: 10px;
+  }
+  
+  /* Travel & Stay Section Styles */
+  #travel-stay {
+      padding: 40px 0;
+      text-align: center;
+  }
+  
+  /* Things-To-Do Section Styles */
+  #things-to-do {
+      padding: 40px 0;
+      text-align: center;
+  }
+  
+  /* Eliminar estilos Dress Code */
+  #dress-code {
+      display: none;
+  }
+  
+  /* RSVP Section Styles */
+  #rsvp {
+      padding: 40px 0;
+      text-align: center;
+  }
+  
+  #rsvp form {
+      max-width: 500px;
+      margin: 0 auto;
+      text-align: left;
+  }
+  
+  #rsvp label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+  }
+  
+  #rsvp input[type="text"],
+  #rsvp textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+  }
+  
+  #rsvp textarea {
+      height: 100px;
+  }
+  
+  #rsvp button[type="submit"] {
+      padding: 10px 20px;
+      background-color: #8B4513; /* Brown color */
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  
+  /* Radio Button Styles */
+  .radio-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: left;
+  }
+  
+  .radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  .radio-container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .radio-container input:checked ~ .checkmark {
+    background-color: #8B4513;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .radio-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .radio-container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+  }
+  
+  /* Footer Styles */
+  footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+      #wedding .container {
+          flex-direction: column;
+      }
+  
+      #wedding .event,
+      #wedding .reception {
+          width: 100%;
+      }
+  }
