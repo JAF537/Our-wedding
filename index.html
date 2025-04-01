@@ -1,83 +1,43 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invitación de Boda</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Música de fondo -->
-    <audio id="music" autoplay loop>
-        <source src="assets/your-song.mp3" type="audio/mpeg">
-        Tu navegador no soporta audio.
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" data-translate="wedding">Our Wedding</a></li>
+            <li><a href="#" data-translate="our_story">Our Story</a></li>
+            <li><a href="#" data-translate="importantisimo">Important</a></li>
+        </ul>
+        <div class="language-selector">
+            <img src="assets/flags/spanish-flag.png" class="language-flag" data-lang="es" alt="Español">
+            <img src="assets/flags/english-flag.png" class="language-flag" data-lang="en" alt="English">
+        </div>
+    </nav>
+
+    <section class="cover-section">
+        <h1 data-translate="cover_subtitle">We're Getting Married!</h1>
+    </section>
+
+    <section class="image-slider">
+        <div class="slider-container">
+            <img src="assets/images/photo1.jpg" alt="Foto 1">
+            <img src="assets/images/photo2.jpg" alt="Foto 2">
+            <img src="assets/images/photo3.jpg" alt="Foto 3">
+        </div>
+        <button class="prev-button">&#10094;</button>
+        <button class="next-button">&#10095;</button>
+    </section>
+
+    <audio controls autoplay loop>
+        <source src="assets/music/your-song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
     </audio>
 
-    <!-- Selector de idioma -->
-    <div id="idiomas">
-        <img src="assets/spanish-flag.png" alt="Español" onclick="cambiarIdioma('es')">
-        <img src="assets/english-flag.png" alt="English" onclick="cambiarIdioma('en')">
-    </div>
-
-    <!-- Fondo de pantalla -->
-    <div id="fondo"></div>
-
-    <!-- Texto inicial animado -->
-    <div id="texto-inicial" class="fade-slide-in">
-        <p>¡Nos casamos y queremos celebrarlo contigo!</p>
-    </div>
-
-    <!-- Sección de Invitación (Pergamino) -->
-    <div id="pergamino">
-        <p id="texto-invitacion">¡Nos casamos! Acompáñanos en nuestro gran día...</p>
-    </div>
-
-    <!-- Botones de eventos -->
-    <div id="eventos-container">
-        <button class="evento-btn" onclick="mostrarEventos()">Eventos</button>
-        <div id="eventos" style="display:none;">
-            <ul>
-                <li>Ceremonia - 17:00</li>
-                <li>Banquete - 19:00</li>
-                <li>Fiesta - 22:00</li>
-            </ul>
-        </div>
-
-        <button class="evento-btn" onclick="mostrarAlojamientos()">Alojamientos y visitas</button>
-        <div id="alojamientos" style="display:none;">
-            <ul>
-                <li><a href="https://hotel1.com">Hotel 1</a></li>
-                <li><a href="https://hotel2.com">Hotel 2</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Localización -->
-    <div id="localizacion-container">
-        <button class="evento-btn" onclick="mostrarLocalizacion()">Localización</button>
-        <div id="localizacion" style="display:none;">
-            <a href="https://maps.google.com" target="_blank">
-                <img src="assets/Marambay-log.png" alt="Localización de Marambay">
-            </a>
-        </div>
-    </div>
-
-    <!-- Galería -->
-    <div id="galeria-container">
-        <button class="evento-btn" onclick="mostrarGaleria()">Galería</button>
-        <div id="galeria" style="display:none;">
-            <div class="galeria-imagen">
-                <img src="assets/foto1.jpg" alt="Foto 1">
-            </div>
-            <div class="galeria-imagen">
-                <img src="assets/foto2.jpg" alt="Foto 2">
-            </div>
-            <div class="galeria-imagen">
-                <img src="assets/foto3.jpg" alt="Foto 3">
-            </div>
-        </div>
-    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
-

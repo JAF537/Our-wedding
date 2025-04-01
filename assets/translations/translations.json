@@ -1,0 +1,28 @@
+{
+    "es": {
+        "wedding": "Boda",
+        "our_story": "Nuestra Historia",
+        "importantisimo": "Importantísimo",
+        "una_cosita_mas": "Una cosita más",
+        "y_como_me_visto": "¿Y COMO ME VISTO?",
+        "rsvp": "Confirmar Asistencia",
+        "cover_subtitle": "¡Nos Casamos!",
+        "evento": "Evento",
+        "reception": "Recepción",
+        "reception_time": "19:00 - 2:00",
+        "location": "Marambay"
+    },
+    "en": {
+        "wedding": "Our Wedding",
+        "our_story": "Our Story",
+        "importantisimo": "Important",
+        "una_cosita_mas": "One more thing",
+        "y_como_me_visto": "What to Wear?",
+        "rsvp": "RSVP",
+        "cover_subtitle": "We're Getting Married!",
+        "evento": "Event",
+        "reception": "Reception",
+        "reception_time": "7:00 PM - 2:00 AM",
+        "location": "Marambay"
+    }
+}
